@@ -10,4 +10,6 @@ nav:
   - title: "License"
     url: "/license"
   - title: "Experiment"
-    url: "/experiment/sample"
+    children:
+      - title: "Sample"
+        url: "/experiment/sample"
