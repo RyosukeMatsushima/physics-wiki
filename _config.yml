@@ -1,18 +1,12 @@
-theme: "just-the-docs"
+remote_theme: just-the-docs/just-the-docs
+title: "物理学Wiki"
 markdown: kramdown
 
-# サイトタイトル
-title: "物理学Wiki"
-
 # サイドバーのナビゲーション
-just_the_docs:
-  logo: ""
-  aux_links:
-    "GitHub Repository": https://github.com/your-username/your-repo
-  nav:
-    - title: "Home"
-      url: "/"
-    - title: "Mechanics"
-      url: "/mechanics"
-    - title: "License"
-      url: "/license"
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Mechanics"
+    url: "/mechanics"
+  - title: "License"
+    url: "/license"
