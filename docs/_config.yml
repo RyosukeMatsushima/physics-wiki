@@ -1,0 +1,13 @@
+remote_theme: just-the-docs/just-the-docs
+title: "物理学Wiki"
+markdown: kramdown
+
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "Mechanics"
+    url: "/mechanics"
+  - title: "License"
+    url: "/license"
+  - title: "Experiment"
+    url: "/experiment/sample"
