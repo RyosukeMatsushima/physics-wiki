@@ -18,7 +18,9 @@ $$
 = \left(\frac{d\boldsymbol{A}}{dt}\right)_{\!\text{body}} + \boldsymbol{\omega} \times \boldsymbol{A}
 $$
 
-ここで $\boldsymbol{\omega}$ は剛体の角速度ベクトルである。
+ここで $\boldsymbol{\omega}$ は剛体の角速度ベクトルであり、慣性系（lab frame）から見た剛体の回転角速度を表す。
+$\boldsymbol{\omega}$ 自体はどの座標系でも同一のベクトルだが、成分表示は選んだ座標系に依存する。
+以降では剛体に固定された座標系（body frame）における成分 $\omega_1, \omega_2, \omega_3$ を用いる。
 
 ### 角運動方程式
 
