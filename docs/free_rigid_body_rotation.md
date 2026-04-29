@@ -18,7 +18,23 @@ $$
 = \left(\frac{d\boldsymbol{A}}{dt}\right)_{\!\text{body}} + \boldsymbol{\omega} \times \boldsymbol{A}
 $$
 
-ここで $\boldsymbol{\omega}$ は剛体の角速度ベクトルである。
+ここで $\boldsymbol{\omega}$ は剛体の角速度ベクトルである。この関係式はベクトル恒等式であり、特定の座標系を選ばずに成り立つ。
+
+本稿では以下の二つの座標系を使い分ける。
+
+- **慣性系**（lab frame / space frame）：空間に固定された直交座標系 $(x, y, z)$。
+  慣性の法則が成り立ち、$\boldsymbol{L}$ の保存はこの座標系で記述される。
+- **剛体系**（body frame）：剛体の重心を原点とし、慣性主軸方向を座標軸
+  $(\hat{\boldsymbol{e}}_1, \hat{\boldsymbol{e}}_2, \hat{\boldsymbol{e}}_3)$ にとった回転座標系。
+  これらの軸は剛体とともに回転するため、慣性系から見ると時間変化する方向を向く。
+
+$\boldsymbol{\omega}$ を剛体系の基底で展開したものを
+
+$$
+\boldsymbol{\omega} = \omega_1\hat{\boldsymbol{e}}_1 + \omega_2\hat{\boldsymbol{e}}_2 + \omega_3\hat{\boldsymbol{e}}_3
+$$
+
+と書く。$(\omega_1, \omega_2, \omega_3)$ は慣性系での絶対回転を剛体主軸に射影した成分であり、オイラー方程式の従属変数となる。
 
 ### 角運動方程式
 
@@ -76,7 +92,12 @@ $$
 
 ### $\omega$ 空間での幾何的意味
 
-$(\omega_1, \omega_2, \omega_3)$ を座標とする空間では、二つの保存条件は
+$\omega$ 空間とは、剛体系の主軸成分 $(\omega_1, \omega_2, \omega_3)$ を座標軸とする**抽象的な 3 次元空間**である。
+各軸は剛体固有の方向（主軸 $\hat{\boldsymbol{e}}_1, \hat{\boldsymbol{e}}_2, \hat{\boldsymbol{e}}_3$）に対応しており、
+剛体の向きが変わるにつれて慣性系での実際の方向も変化する。
+この空間での 1 点は剛体の瞬間的な回転状態を表す。
+
+$(\omega_1, \omega_2, \omega_3)$ を座標とするこの空間では、二つの保存条件は
 
 $$
 \frac{\omega_1^2}{2T/I_1} + \frac{\omega_2^2}{2T/I_2} + \frac{\omega_3^2}{2T/I_3} = 1
@@ -95,6 +116,10 @@ $\omega$ の先端はこれら二楕円体の交線上を動く。
 ### $L$ 空間への変換
 
 $L_i = I_i\,\omega_i$ によって $\omega$ 空間から $L$ 空間 $(L_1, L_2, L_3)$ へ移る。
+$L$ 空間の座標軸は $\omega$ 空間と同じ主軸方向 $(\hat{\boldsymbol{e}}_1, \hat{\boldsymbol{e}}_2, \hat{\boldsymbol{e}}_3)$ を基底とし、
+各成分は角運動量ベクトル $\boldsymbol{L}$ を剛体固有の主軸へ射影したものである。
+慣性系では $\boldsymbol{L}$ の絶対方向と大きさが保存されているが、
+剛体が回転するにつれて主軸の向きは変わるため、$(L_1, L_2, L_3)$ の値は一般に時間変化する。
 保存条件を $L_i$ で書き直すと
 
 $$
