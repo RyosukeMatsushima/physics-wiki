@@ -313,13 +313,18 @@ $$
 
 ### 「滑りなし転がり」の証明
 
-接点 $\boldsymbol{p}$ の速度を求める。剛体に固定された点 $\boldsymbol{p}$ の慣性系での速度は
+接点 $\boldsymbol{p}$ の速度を求める。ただし、ここでの
+$\boldsymbol{p}=\boldsymbol{\omega}/\sqrt{2T}$ は角速度からその瞬間ごとに定まる量であり、
+時間を通じて同一の「剛体に固定された点」を追跡しているわけではない。
+したがって以下で評価するのは、**その瞬間に楕円体上で点 $\boldsymbol{p}$ に位置している物質点
+（瞬間接点）**の慣性系での速度である。その瞬間の位置ベクトルが $\boldsymbol{p}$ なので、
+その速度は剛体の速度場
 
 $$
 \boldsymbol{v}_p = \boldsymbol{\omega} \times \boldsymbol{p} = \boldsymbol{\omega} \times \frac{\boldsymbol{\omega}}{\sqrt{2T}} = \frac{\boldsymbol{\omega} \times \boldsymbol{\omega}}{\sqrt{2T}} = \boldsymbol{0}
 $$
 
-接点 $\boldsymbol{p}$ の速度はゼロである。
+で与えられる。したがって、その瞬間接点の速度はゼロである。
 これは**慣性楕円体が不変平面上を滑りなしで転がる**ことを意味する。
 
 **ポアンソーの定理（まとめ）**：
