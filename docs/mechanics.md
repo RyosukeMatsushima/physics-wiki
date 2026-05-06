@@ -19,6 +19,7 @@ F = m a より、a = F / m = 5N / 2kg = 2.5 m/s²
 
 ## 発展的なトピック
 
+- [運動量と角運動量](momentum_and_angular_momentum.md) — 定義、単位、運動エネルギーとの関係
 - [自由剛体の回転運動](free_rigid_body_rotation.md) — オイラー方程式、エネルギー楕円体、ポアンソーの定理
 
 ## 参考文献
