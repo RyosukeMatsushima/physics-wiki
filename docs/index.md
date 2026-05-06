@@ -11,4 +11,5 @@ title: 物理学Wiki
 - [コミット履歴（GitHub）](https://github.com/RyosukeMatsushima/physics-wiki/commits/main)
 
 - [力学](mechanics.md)
+  - [自由剛体の回転運動](free_rigid_body_rotation.md)
 - [ライセンス](license.md)
